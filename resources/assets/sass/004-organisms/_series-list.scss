@@ -1,0 +1,11 @@
+.series-list{
+	position: relative;
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+}
+.series-list__title{
+	@include font-size(25px);
+  padding: 0 15px;
+  margin-bottom: 15px;
+}

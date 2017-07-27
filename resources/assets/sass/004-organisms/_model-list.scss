@@ -1,0 +1,11 @@
+.model-list{
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+}
+@include small-medium{
+	.model-list{
+		flex-flow: row wrap;
+	}
+}
+
