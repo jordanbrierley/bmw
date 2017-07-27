@@ -35,12 +35,14 @@ class BmwImportData extends Command
     }
 
     /**
-     * Execute the console command.
+     * Console command to import the data from the API.
+     * Done as a command so we can schedule this through the cron tab so going forward we can regularly import the data into our application automatically
      *
      * @return mixed
      */
     public function handle()
     {
+
         $this->info('Starting Import');
         // set up new guzzle client
         $client = new Client();
